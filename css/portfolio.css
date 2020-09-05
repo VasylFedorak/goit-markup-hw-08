@@ -87,7 +87,6 @@ img {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: yellow;
 }
 
 .advantage .container,
@@ -432,6 +431,53 @@ summary {
   background-color: #ffffff;
 }
 
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #2f303a;
+}
+
+.adress, .adress-contacts {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  text-align: center;
+}
+
+.adress {
+  color: #ffffff;
+}
+
+.adress-contacts {
+  color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+}
+
+.feedback {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.adress-footer {
+  display: inline-block;
+  margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-media .social-icon-link {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-media .social-icon {
+  fill: #ffffff;
+}
+
 .header-frame {
   border-bottom: 1px solid #ececec;
 }
@@ -498,8 +544,9 @@ summary {
 }
 
 .logo.footer {
-  display: inline-block;
+  display: block;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .backdrop {

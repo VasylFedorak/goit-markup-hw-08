@@ -1,0 +1,57 @@
+.footer-section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: $footer-bgc;
+}
+
+%adress-font {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.714;
+  text-align: center;
+}
+
+.adress {
+  @extend %adress-font;
+
+  color: $bgc;
+}
+
+.adress-contacts {
+  @extend %adress-font;
+
+  color: $contacts-color;
+
+  text-align: center;
+}
+
+.feedback {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.142;
+
+  text-transform: uppercase;
+
+  color: $bgc;
+
+  margin-bottom: 20px;
+}
+
+.adress-footer {
+  display: inline-block;
+  margin-bottom: 9px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-media {
+  .social-icon-link {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .social-icon {
+    fill: $bgc;
+  }
+}
