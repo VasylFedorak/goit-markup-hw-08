@@ -1,0 +1,57 @@
+.advantage-item {
+  margin-top: 0px;
+  margin-bottom: 10px;
+
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.143;
+
+  text-transform: uppercase;
+
+  color: $link-color;
+}
+
+.advantage .item {
+  &::before {
+    display: block;
+    content: "";
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+}
+
+%advant-before {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.first-advant::before {
+  @extend %advant-before;
+  background-image: url(../img/img-icons/antena1.svg);
+}
+
+.second-advant::before {
+  @extend %advant-before;
+  background-image: url(../img/img-icons/cloсk.svg);
+}
+
+.third-advant::before {
+  @extend %advant-before;
+  background-image: url(../img/img-icons/diagram.1.svg);
+}
+
+.fours-advant::before {
+  @extend %advant-before;
+  background-image: url(../img/img-icons/astronaut1.svg);
+}
+
+.advantage-item {
+  text-align: center;
+  color: $link-color;
+}
+
+.advantage .item:not(:last-child) {
+  margin-bottom: 30px;
+}
