@@ -1,0 +1,30 @@
+.hero-button {
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 4px;
+  min-width: 200px;
+  border: 1px solid transparent;
+
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.875;
+
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: $bgc;
+
+  background-color: $hover-button-blue;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.active-hero-btn:hover,
+.active-hero-btn-hero-btn:focus {
+  color: $hover-button-blue;
+  background-color: $bgc;
+}
