@@ -1,0 +1,57 @@
+.team .section-title,
+.partners.container .section-title {
+  margin-bottom: 50px;
+}
+
+.team-member + p {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.188;
+
+  text-align: center;
+}
+
+.team {
+  background-color: #f5f4fa;
+
+  &-member {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.188;
+
+    text-align: center;
+
+    color: $link-color;
+  }
+}
+
+.team-member {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.team-description {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+
+.social-icon-list {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-icon-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: $bgc;
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
