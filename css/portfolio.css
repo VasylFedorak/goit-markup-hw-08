@@ -33,6 +33,7 @@
   font-weight: 900;
 }
 
+/*розміри чек поінтів*/
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -1220,14 +1221,10 @@ summary {
   margin: -15px;
 }
 
-.partners-icon-link {
-  width: calc((100% - 4 * 15px) / 2);
-  margin: 15px;
-}
-
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .partners-icon-link {
-    width: calc((100% - 12 * 15px) / 6);
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
   }
 }
 
@@ -1338,8 +1335,10 @@ summary {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.project:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .project:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .project:hover, .project:focus {
@@ -1392,12 +1391,44 @@ summary {
       flex-wrap: wrap;
 }
 
+@media screen and (min-width: 768px) {
+  .porfolio-nav .list.nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .list.nav > li:not(:last-child) {
   margin-right: 8px;
 }
 
 .list.nav > li {
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .list.examples {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio {
+    width: calc((100%- 4 * 15) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .portfolio {
+    width: calc((100%- 6 * 15) / 3);
+  }
 }
 
 .team .section-title,

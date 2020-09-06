@@ -2,12 +2,12 @@
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
   padding-bottom: 16px;
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     padding-top: 21px;
     padding-bottom: 21px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     padding-top: 24px;
     padding-bottom: 25px;
   }
@@ -17,24 +17,24 @@
   @media screen and(max-width:767px) {
     display: none;
   }
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     display: flex;
     margin-left: 81px;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     margin-left: 85px;
   }
 }
 
 .site-nav > li + li {
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     margin-left: 50px;
   }
 }
 
 .main-nav {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     display: flex;
     align-items: center;
   }
@@ -45,17 +45,17 @@
     display: none;
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     margin-left: auto;
   }
 
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     display: flex;
   }
 }
 
 .auth-nav > li + li {
-  @media screen and(min-width:1200px) {
+  @media screen and(min-width:$desktop) {
     margin-left: 30px;
   }
 }
@@ -96,7 +96,7 @@
     background: $hover-button-blue;
     border-radius: 2px;
 
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:$desktop) {
       bottom: -31px;
     }
   }

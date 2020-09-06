@@ -15,7 +15,7 @@
 
     color: $bgc;
 
-    @media screen and(min-width:1200px) {
+    @media screen and(min-width:$desktop) {
       font-size: 44px;
       line-height: 1.36;
     }
@@ -38,11 +38,11 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
+  @media screen and (min-width: $tablet) {
+    width: $tablet;
   }
 
-  @media screen and (min-width: 1200px) {
-    width: 1200px;
+  @media screen and (min-width: $desktop) {
+    width: $desktop;
   }
 }

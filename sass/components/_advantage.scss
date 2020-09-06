@@ -21,7 +21,7 @@
     margin-bottom: 30px;
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
   }
 }
 
@@ -54,7 +54,7 @@
   text-align: center;
   color: $link-color;
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     text-align: left;
   }
 }
@@ -64,7 +64,7 @@
 }
 
 .advantage .list {
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:$tablet) {
     display: flex;
     flex-wrap: wrap;
     margin: -15px;
@@ -72,12 +72,12 @@
 }
 
 .advantage .item {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $tablet) {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
