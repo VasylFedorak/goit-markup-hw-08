@@ -2,14 +2,28 @@
   border-bottom: 1px solid #ececec;
 }
 
-.site-nav.list {
+.site-nav {
   @media screen and(max-width:767px) {
     display: none;
+  }
+  @media screen and(min-width:768px) {
+    display: flex;
+    margin-left: 81px;
+  }
+}
+
+.main-nav {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
   }
 }
 
 .auth-nav {
   @media screen and(max-width:767px) {
     display: none;
+  }
+  @media screen and(min-width:768px) {
+    margin-left: auto;
   }
 }

@@ -46,3 +46,17 @@ img {
   padding: 0px;
   list-style: none;
 }
+
+.link {
+  font-weight: 500;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  text-decoration: none;
+
+  color: $link-color;
+
+  &.active.current {
+    color: $hover-button-blue;
+  }
+}
