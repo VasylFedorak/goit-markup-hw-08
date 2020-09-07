@@ -17,6 +17,12 @@
   }
 
   background-color: greenyellow;
+
+  &.last-section {
+    @media screen and(min-width:1200px) {
+      display: flex;
+    }
+  }
 }
 
 .advantage .container,

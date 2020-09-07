@@ -105,12 +105,12 @@
 
 .team .item {
   @media screen and(min-width:$tablet) {
-    width: calc((100% - 4 * 15) / 2);
+    width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 
   @media screen and(min-width:$desktop) {
-    width: calc((100% - 8 * 15) / 4);
+    width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }

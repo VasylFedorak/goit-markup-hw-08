@@ -120,6 +120,14 @@ img {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .container.last-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .advantage .container,
 .team .container,
 .partners .container,
@@ -550,6 +558,12 @@ summary {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .main-adress {
+    margin-right: 70px;
+  }
+}
+
 .email {
   width: 450px;
   height: 50px;
@@ -668,17 +682,12 @@ summary {
           align-items: center;
 }
 
-@media screen and (win-width: 768px) {
-  .footer-tablet {
-    display: -webkit-box;
-    display: -ms-flexbox;
+/*.footer-tablet {
+  @media screen and(win-width:$tablet) {
     display: flex;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
-}
-
+}*/
 .header-frame {
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
@@ -1573,14 +1582,14 @@ summary {
 
 @media screen and (min-width: 768px) {
   .team .item {
-    width: calc((100% - 4 * 15) / 2);
+    width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team .item {
-    width: calc((100% - 8 * 15) / 4);
+    width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
 }

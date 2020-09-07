@@ -59,6 +59,10 @@
 
 .main-adress {
   margin-bottom: 60px;
+
+  @media screen and(min-width:1200px) {
+    margin-right: 70px;
+  }
 }
 
 .email {
@@ -124,9 +128,9 @@
   align-items: center;
 }
 
-.footer-tablet {
+/*.footer-tablet {
   @media screen and(win-width:$tablet) {
     display: flex;
     justify-content: space-evenly;
   }
-}
+}*/
