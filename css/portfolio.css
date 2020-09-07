@@ -105,7 +105,7 @@ img {
   margin-right: auto;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-color: greenyellow;
+  /*background-color: greenyellow;*/
 }
 
 @media screen and (min-width: 768px) {
@@ -515,6 +515,12 @@ summary {
   text-align: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .adress, .adress-contacts {
+    text-align: start;
+  }
+}
+
 .adress {
   color: #ffffff;
 }
@@ -546,6 +552,12 @@ summary {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-media {
+    margin-right: 93px;
+  }
+}
+
 .footer-media .social-icon-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
@@ -554,8 +566,10 @@ summary {
   fill: #ffffff;
 }
 
-.main-adress {
-  margin-bottom: 60px;
+@media screena and (max-width: 1200px) {
+  .main-adress {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -588,7 +602,24 @@ summary {
           align-items: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .email {
+    width: 358px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .email {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .email {
+    margin-right: 12px;
+  }
 }
 
 .email::-webkit-input-placeholder {
@@ -680,6 +711,18 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .form-flex {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 /*.footer-tablet {
@@ -878,11 +921,18 @@ summary {
   font-family: "Raleway", sans-serif;
   font-style: normal;
   font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.16;
   display: inline-block;
   text-decoration: none;
   color: #2196f3;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-black {
@@ -898,6 +948,12 @@ summary {
   margin-bottom: 20px;
   margin-top: 0px;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .logo.footer {
+    text-align: start;
+  }
 }
 
 .backdrop {
@@ -1455,14 +1511,14 @@ summary {
 
 @media screen and (min-width: 768px) {
   .examples .portfolio {
-    width: calc((100%- 4 * 15) / 2);
+    width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .examples .portfolio {
-    width: calc((100%- 6 * 15) / 3);
+    width: calc((100% - 6 * 15px) / 3);
   }
 }
 

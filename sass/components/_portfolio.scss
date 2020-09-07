@@ -148,17 +148,18 @@
   @media screen and(min-width:$tablet) {
     display: flex;
     flex-wrap: wrap;
+
     margin: -15px;
   }
 }
 
 .examples .portfolio {
   @media screen and(min-width:$tablet) {
-    width: calc((100%- 4 * 15) / 2);
+    width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 
   @media screen and(min-width:$desktop) {
-    width: calc((100%- 6 * 15) / 3);
+    width: calc((100% - 6 * 15px) / 3);
   }
 }

@@ -8,6 +8,10 @@
   font-size: 14px;
   line-height: 1.714;
   text-align: center;
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+  }
 }
 
 .adress {
@@ -46,7 +50,13 @@
 }
 
 .footer-media {
-  margin-bottom: 60px;
+  @media screen and(max-width:$desk-top) {
+    margin-bottom: 60px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    margin-right: 93px;
+  }
 
   .social-icon-link {
     background-color: rgba(255, 255, 255, 0.1);
@@ -58,7 +68,9 @@
 }
 
 .main-adress {
-  margin-bottom: 60px;
+  @media screena and(max-width:$desktop) {
+    margin-bottom: 60px;
+  }
 
   @media screen and(min-width:1200px) {
     margin-right: 70px;
@@ -68,6 +80,10 @@
 .email {
   width: 450px;
   height: 50px;
+
+  @media screen and(min-width:$desktop) {
+    width: 358px;
+  }
 
   background: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -88,7 +104,13 @@
 
   color: $contacts-color;
 
-  margin-bottom: 20px;
+  @media screen and(max-width:1199px) {
+    margin-bottom: 20px;
+  }
+
+  @media screen and(min-width:1200px) {
+    margin-right: 12px;
+  }
 
   &::placeholder {
     font-family: Roboto;
@@ -126,6 +148,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and(min-width:1200px) {
+    flex-direction: row;
+    align-items: center;
+  }
 }
 
 /*.footer-tablet {
