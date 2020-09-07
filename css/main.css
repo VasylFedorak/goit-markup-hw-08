@@ -548,8 +548,10 @@ summary {
   margin-bottom: 8px;
 }
 
-.footer-media {
-  margin-bottom: 60px;
+@media screen and (max-width: 1200px) {
+  .footer-media {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -566,7 +568,7 @@ summary {
   fill: #ffffff;
 }
 
-@media screena and (max-width: 1200px) {
+@media screen and (max-width: 767px) {
   .main-adress {
     margin-bottom: 60px;
   }
@@ -731,7 +733,20 @@ summary {
     justify-content: space-evenly;
   }
 }*/
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-bottom: 60px;
+  }
+}
+
 .header-frame {
+  position: relative;
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -867,6 +882,56 @@ summary {
 
 .active:hover, .active:focus {
   color: #2196f3;
+}
+
+.mobile-menu {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  margin-left: 200px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+}
+
+.mobile-menu .icon-close {
+  display: none;
+}
+
+.mobile-menu.is-open .icon-close {
+  display: block;
+}
+
+.mobile-menu.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-container {
+    display: none;
+  }
 }
 
 .hero {
@@ -1510,14 +1575,14 @@ summary {
 }
 
 @media screen and (min-width: 768px) {
-  .examples .portfolio {
+  .examples .project {
     width: calc((100% - 4 * 15px) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .examples .portfolio {
+  .examples .project {
     width: calc((100% - 6 * 15px) / 3);
   }
 }

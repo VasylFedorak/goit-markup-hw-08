@@ -1,4 +1,6 @@
 .header-frame {
+  position: relative;
+
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -108,5 +110,51 @@
   &:hover,
   &:focus {
     color: $hover-button-blue;
+  }
+}
+
+.mobile-menu {
+  display: inline-flex;
+  margin-left: 200px;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  @media screen and(min-width:768px) {
+    display: none;
+  }
+}
+
+.mobile-menu .icon-close {
+  display: none;
+}
+
+.mobile-menu.is-open .icon-close {
+  display: block;
+}
+
+.mobile-menu.is-open .icon-menu {
+  display: none;
+}
+
+.menu-container {
+  display: none;
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+
+  background-color: $bgc;
+  padding: 60px;
+  font-size: 18px;
+  text-align: center;
+
+  &.is-open {
+    display: block;
+  }
+
+  @media screen and(min-width:768px) {
+    display: none;
   }
 }

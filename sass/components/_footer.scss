@@ -50,7 +50,7 @@
 }
 
 .footer-media {
-  @media screen and(max-width:$desk-top) {
+  @media screen and(max-width:$desktop) {
     margin-bottom: 60px;
   }
 
@@ -68,7 +68,7 @@
 }
 
 .main-adress {
-  @media screena and(max-width:$desktop) {
+  @media screen and(max-width:767px) {
     margin-bottom: 60px;
   }
 
@@ -161,3 +161,11 @@
     justify-content: space-evenly;
   }
 }*/
+
+.footer-tablet {
+  @media screen and(min-width:$tablet) {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 60px;
+  }
+}
