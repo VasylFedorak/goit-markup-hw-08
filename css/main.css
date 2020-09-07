@@ -33,7 +33,7 @@
   font-weight: 900;
 }
 
-/*розміри чек поінтів*/
+/*розміри чек-поінтів*/
 body {
   background-color: #ffffff;
   font-family: "Roboto", sans-serif;
@@ -436,8 +436,10 @@ summary {
   }
 }
 
-.advantage .item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .advantage .item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -664,6 +666,17 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (win-width: 768px) {
+  .footer-tablet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 .header-frame {
@@ -1432,14 +1445,14 @@ summary {
 }
 
 @media screen and (min-width: 768px) {
-  .portfolio {
+  .examples .portfolio {
     width: calc((100%- 4 * 15) / 2);
     margin: 15px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .portfolio {
+  .examples .portfolio {
     width: calc((100%- 6 * 15) / 3);
   }
 }
@@ -1526,8 +1539,10 @@ summary {
   padding-bottom: 24px;
 }
 
-.member-item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (max-width: 767px) {
+  .member-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 .social-icon {
@@ -1601,7 +1616,7 @@ summary {
 }
 
 .works .item {
-  width: calc((100% - 30px * 2) / 3);
+  width: calc((100% - 2 * 30px) / 3);
 }
 
 .works .section-title {

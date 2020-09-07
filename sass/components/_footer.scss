@@ -123,3 +123,10 @@
   flex-direction: column;
   align-items: center;
 }
+
+.footer-tablet {
+  @media screen and(win-width:$tablet) {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}

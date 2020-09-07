@@ -152,7 +152,7 @@
   }
 }
 
-.portfolio {
+.examples .portfolio {
   @media screen and(min-width:$tablet) {
     width: calc((100%- 4 * 15) / 2);
     margin: 15px;
