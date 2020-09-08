@@ -923,7 +923,7 @@ summary {
 }
 
 .menu-container {
-  display: none;
+  /*display: none;*/
   position: absolute;
   top: 100%;
   left: 0;
@@ -932,16 +932,20 @@ summary {
   padding: 60px;
   font-size: 18px;
   text-align: center;
+  /*@media screen and(min-width:768px) {
+    display: none;
+  }*/
+  @medi;
+}
+
+@media screen and (max-width: 480px) {
+  .menu-container {
+    width: 480px;
+  }
 }
 
 .menu-container.is-open {
   display: block;
-}
-
-@media screen and (min-width: 768px) {
-  .menu-container {
-    display: none;
-  }
 }
 
 .hero {

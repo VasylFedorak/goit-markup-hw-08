@@ -138,12 +138,16 @@
 }
 
 .menu-container {
-  display: none;
+  /*display: none;*/
 
   position: absolute;
   top: 100%;
   left: 0;
   width: 100%;
+
+  @media screen and (max-width: $mobile) {
+    width: 480px;
+  }
 
   background-color: $bgc;
   padding: 60px;
@@ -154,7 +158,11 @@
     display: block;
   }
 
-  @media screen and(min-width:768px) {
+  /*@media screen and(min-width:768px) {
+    display: none;
+  }*/
+
+  @media screen and(max-width:767px) {
     display: none;
   }
 }
