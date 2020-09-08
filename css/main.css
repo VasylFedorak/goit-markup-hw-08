@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @font-face {
   font-family: "Roboto";
-  src: url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-regular.woff") format("woff");
+  src: url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-regular.woff") format("woff");
   font-style: normal;
   font-weight: 400;
 }
@@ -9,7 +9,7 @@
 /* roboto-500 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-500.woff") format("woff");
+  src: url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-500.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-500.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-style: normal;
   font-weight: 500;
@@ -18,7 +18,7 @@
 /* roboto-700 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-700.woff") format("woff");
+  src: url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-700.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-style: normal;
   font-weight: 700;
@@ -27,7 +27,7 @@
 /* roboto-900 - latin_cyrillic */
 @font-face {
   font-family: "Roboto";
-  src: url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../../css/fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-900.woff") format("woff");
+  src: url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/roboto-v20-latin_cyrillic/roboto-v20-latin_cyrillic-900.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   font-style: normal;
   font-weight: 900;
@@ -1670,7 +1670,6 @@ summary {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  outline: 2px solid blue;
 }
 
 .team .social-icon-list {
