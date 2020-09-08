@@ -407,7 +407,7 @@ summary {
   display: block;
   content: "";
   height: 120px;
-  background-color: #f5f4fa;
+  background-color: #fbfbfb;
   border-radius: 4px;
   margin-bottom: 30px;
 }
@@ -505,6 +505,12 @@ summary {
 
 .footer-section {
   background-color: #2f303a;
+}
+
+@media screen and (max-width: 467px) {
+  .footer-section {
+    width: 480px;
+  }
 }
 
 .adress, .adress-contacts {

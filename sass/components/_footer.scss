@@ -1,5 +1,9 @@
 .footer-section {
   background-color: $footer-bgc;
+
+  @media screen and (max-width: 467px) {
+    width: $mobile;
+  }
 }
 
 %adress-font {
