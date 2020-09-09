@@ -129,6 +129,8 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
 }
 
@@ -803,8 +805,10 @@ summary {
   }
 }
 
-.site-nav > li:not(:last-child) {
-  margin-bottom: 40px;
+@media screen and (max-width: 767px) {
+  .site-nav > li:not(:last-child) {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -812,17 +816,15 @@ summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    /*align-items: center;*/
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
 @media screen and (min-width: 768px) {
   .auth-nav {
     margin-left: auto;
-  }
-  .auth-nav .link.contacts.active {
-    font-size: 12;
-    line-height: 1.16;
   }
 }
 
@@ -831,17 +833,22 @@ summary {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.auth-nav > li + li {
-  margin-top: 16px;
+@media screen and (min-width: 1200px) {
+  .auth-nav > li:not(:last-child) {
+    margin-right: 30px;
+    text-align: start;
+  }
 }
 
-@media screen and (min-width: 1200px) {
-  .auth-nav > li + li {
-    margin-left: 30px;
+@media screen and (max-width: 767px) {
+  .auth-nav > li:not(:last-child) {
+    margin-bottom: 16px;
   }
 }
 
@@ -983,6 +990,17 @@ summary {
         -ms-flex-positive: 1;
             flex-grow: 1;
     font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
