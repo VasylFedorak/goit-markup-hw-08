@@ -16,6 +16,10 @@
 }
 
 .site-nav {
+  @media screen and(max-width:767px) {
+    margin-bottom: 60px;
+  }
+
   @media screen and(min-width:$tablet) {
     display: flex;
     margin-left: 81px;
@@ -27,15 +31,19 @@
 }
 
 .site-nav > li + li {
-  @media screen and(min-width:$tablet) {
+  @media screen and(min-width: $tablet) {
     margin-left: 50px;
   }
+}
+
+.site-nav > li:not(:last-child) {
+  margin-bottom: 40px;
 }
 
 .main-nav {
   @media screen and (min-width: $tablet) {
     display: flex;
-    align-items: center;
+    /*align-items: center;*/
   }
 }
 
@@ -55,6 +63,7 @@
 }
 
 .auth-nav > li + li {
+  margin-top: 16px;
   @media screen and(min-width:$desktop) {
     margin-left: 30px;
   }
@@ -155,6 +164,12 @@
     top: 100%;
     left: 0;
     width: 100%;
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
 
     &.is-open {
       display: block;
