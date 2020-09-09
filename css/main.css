@@ -967,6 +967,7 @@ summary {
     top: 100%;
     left: 0;
     width: 100%;
+    z-index: 100;
     padding-top: 60px;
     padding-bottom: 60px;
     background: #ffffff;
@@ -1705,6 +1706,12 @@ summary {
   background-color: #f5f4fa;
 }
 
+@media screen and (max-width: 767px) {
+  .team {
+    min-width: 480px;
+  }
+}
+
 .team-member {
   font-weight: 500;
   font-size: 16px;
@@ -1814,6 +1821,11 @@ summary {
     width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
 }
 
 @media screen and (max-width: 1199px) {

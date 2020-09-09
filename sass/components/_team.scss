@@ -12,6 +12,9 @@
 }
 
 .team {
+  @media screen and(max-width:767px) {
+    min-width: 480px;
+  }
   background-color: #f5f4fa;
 
   &-member {
@@ -111,4 +114,9 @@
     width: calc((100% - 8 * 15px) / 4);
     margin: 15px;
   }
+}
+
+.team-photo {
+  width: 100%;
+  height: auto;
 }
