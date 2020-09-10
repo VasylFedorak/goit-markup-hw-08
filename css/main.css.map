@@ -12,7 +12,7 @@
         "../sass/components/_button.scss",
         "../sass/components/_footer.scss",
         "../sass/components/_header.scss",
-        "../sass/components/_hero.scss",
+        "../sass/_hero.scss",
         "../sass/components/_logo.scss",
         "../sass/components/_modal.scss",
         "../sass/components/_partners.scss",
