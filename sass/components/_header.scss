@@ -114,7 +114,7 @@
     border-radius: 2px;
 
     @media screen and(min-width:$tablet) {
-      bottom: -47px;
+      bottom: -35px;
     }
 
     @media screen and(min-width:$desktop) {
@@ -165,7 +165,6 @@
   background-color: $bgc;
   /*padding: 60px;*/
   font-size: 18px;
-  text-align: center;
 
   @media screen and(max-width:767px) {
     display: none;
@@ -174,6 +173,7 @@
     left: 0;
     width: 100%;
     z-index: 100;
+    text-align: center;
 
     padding-top: 60px;
     padding-bottom: 60px;
@@ -190,6 +190,7 @@
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
+    align-items: center;
 
     font-size: 14px;
   }
@@ -211,6 +212,16 @@
   }
 }
 
-.auth-nav .contacts {
-  text-align: start;
+.link.contacts.active {
+  @media screen and(min-width:$tablet) {
+    font-size: 12px;
+
+    line-height: 1.16;
+  }
+
+  @media screen and(min-width:$desktop) {
+    font-size: 14px;
+
+    line-height: 1.14;
+  }
 }
