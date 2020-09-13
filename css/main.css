@@ -560,6 +560,10 @@ summary {
   margin-bottom: 8px;
 }
 
+.footer-media {
+  margin-top: 12px;
+}
+
 @media screen and (max-width: 1200px) {
   .footer-media {
     margin-bottom: 60px;
@@ -755,6 +759,10 @@ summary {
             justify-content: space-evenly;
     margin-bottom: 60px;
   }
+}
+
+.subscription {
+  margin-top: 12px;
 }
 
 .header-frame {
